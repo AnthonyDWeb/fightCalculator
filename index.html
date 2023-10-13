@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <title>Fight Calculator</title>
 </head>
+
 <body>
-    
+
+    <Header></Header>
+
+    <main class="main">
+        <h1 class="main-title">Fight Calculator</h1>
+        <div class="parameterContainer">
+            <div class="parameterRow">
+                <p>Objectif de Points :</p>
+                <input id="pointGoal" type="number" value="1">
+            </div>
+            <div class="parameterRow">
+                <p>Points du Joueur :</p>
+                <input id="playerPoints" type="number" value="1">
+            </div>
+            <div class="parameterRow">
+                <p>Points par Combats :</p>
+                <input id="fightPoints" type="number" value="1">
+            </div>
+            <div class="parameterRow">
+                <p>Nombre de Vies :</p>
+                <input id="numberOfLife" type="number" value="1">
+            </div>
+        </div>
+        <div class="btnContainer">
+            <button id="btnValidation" class="button" onclick="result()">Valider</button>
+            <button id="btnReset" class="button" onclick="reset()">Réinitialiser</button>
+        </div>
+
+        <div id="resultat"></div>
+    </main>
+
+    <script type="text/javascript" src="./index.js"></script>
+
 </body>
+
 </html>
