@@ -24,7 +24,7 @@ function maxPoints() {
     const division = document.createElement("p");
     division.id = "maxpoints"; division.classList.add("divisionContaint");
     document.getElementById("resultat").appendChild(division);
-    division.innerHTML = `Nombre de combats possible : ${pointsMax}`;
+    division.innerHTML = `Nombre de points possible : ${pointsMax}`;
 }
 
 function result() {

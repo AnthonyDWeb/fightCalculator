@@ -132,11 +132,11 @@ main {
 
     p,
     button {
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     input {
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 
     .main-title {
@@ -146,6 +146,7 @@ main {
     .parameterContainer {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         width: 100%;
     }
 
@@ -164,7 +165,7 @@ main {
 
 
 @media screen and (min-width: 1024px) {
-    p,button {
+    p,button,input {
         font-size: 20px;
     }
 }
